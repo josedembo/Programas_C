@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1610817519 source:c:\users\pedro\documents\programas c\calcula_valor_numerico\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

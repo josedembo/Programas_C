@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1612363312 source:c:\users\pedro\documents\programas c\sequancia_k\main.c
+	<stdio.h>
+	<stdlib.h>
+
