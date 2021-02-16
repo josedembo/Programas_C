@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
 	float media;
 	
 	
+	
 	printf("informe o valor da nota1\nR:");
 	scanf("%f",&nota1);
 	
