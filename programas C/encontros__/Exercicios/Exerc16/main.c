@@ -15,8 +15,7 @@ int main(int argc, char *argv[]) {
 	bool existe = true;
 	for (i = 0; i < 6; i++ ){
 		for(j = 0; j < 6; j++){
-			if(vetor_A[i] != vetor_B[j])
-			{
+			if(vetor_A[i] != vetor_B[j]){
 	 			existe = true;
 			}else{
 				existe = false;
