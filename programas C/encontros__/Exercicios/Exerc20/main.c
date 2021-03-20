@@ -25,7 +25,6 @@ int main(int argc, char *argv[]) {
 	
 	// somando os valores da diagonal da matriz
 	soma = 0;
-	
 	for (i = 0; i < ordem_n; i++){
 		for(j = 0; j < ordem_n; j++){
 			if(i==j){
