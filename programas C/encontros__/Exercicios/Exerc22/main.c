@@ -23,15 +23,17 @@ int main(int argc, char *argv[]) {
 	int i, j;
 	int auxi;
 	
+	// prienchendo a matriz quadrada
 	for (i = 0; i < 5; i++ ){
 		for(j = 0; j < 5; j++){
 			printf("informe o elemento %d.%d \nR:", (i+1),(j+1));
-			scanf("%d", &matrizQuadrada[i][j]);
+			scanf("%d", &matrizQuadrada[i][j]); // aqui ela catpa todos os valores para priencher
 		}
 	}
 	
-	bool triangular = false;
+	bool triangular = false;  // as variveis triangular e auxi
 	auxi = 1;
+	
 	for (i = 0; i < 5; i++ ){
 		for(j = 0; j < 5; j++)
 		{

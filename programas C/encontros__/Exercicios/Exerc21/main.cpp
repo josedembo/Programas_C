@@ -4,13 +4,32 @@
 
 int main(int argc, char** argv) {
 	int i, j, soma;
-	int matriz_1[2][2] = {{2,4},{1,3}};
-	int matriz_2[2][2] = {{5,8},{2,4}};
-	int matriz_soma[2][2];
+	int matriz_1[4][3], matriz_2[4][3];
+	int matriz_soma[4][3];
+	
+	printf("Priencha a primeira matriz\n");
+	for ( i = 0; i < 4; i++ ){
+		
+		for( j = 0; j < 3; j++ ){
+			
+			printf("informe o valor %d.%d: ", i+1, j+1);
+			scanf("%d", &matriz_1[i][j]);
+		}
+	}
+	
+	printf("Priencha a segunda matriz\n");
+	for ( i = 0; i < 4; i++ ){
+		
+		for( j = 0; j < 3; j++ ){
+			
+			printf("informe o valor %d.%d: ",i+1, j+1);
+			scanf("%d", &matriz_2[i][j]);
+		}
+	}	
 	
 	soma = 0;
-	for (i = 0; i < 2; i++ ){
-		for(j = 0; j < 2; j++){
+	for (i = 0; i < 4; i++ ){
+		for(j = 0; j < 3; j++){
 			soma = matriz_1[i][j] + matriz_2[i][j];
 			matriz_soma[i][j] = soma;
 			soma = 0;
@@ -18,8 +37,8 @@ int main(int argc, char** argv) {
 	}
 	
 	printf("Matriz 1\n");
-	for (i = 0; i < 2; i++ ){
-		for(j = 0; j < 2; j++){
+	for (i = 0; i < 4; i++ ){
+		for(j = 0; j < 3; j++){
 			printf("%d ",matriz_1[i][j]);
 		}
 		printf("\n");
@@ -28,8 +47,8 @@ int main(int argc, char** argv) {
 	printf("\n");
 	
 	printf("Matriz 2\n");
-	for (i = 0; i < 2; i++ ){
-		for(j = 0; j < 2; j++){
+	for (i = 0; i < 4; i++ ){
+		for(j = 0; j < 3; j++){
 			printf("%d ",matriz_2[i][j]);
 		}
 		printf("\n");
@@ -38,8 +57,8 @@ int main(int argc, char** argv) {
 	printf("\n");
 	
 	printf("Matriz soma\n");
-	for (i = 0; i < 2; i++ ){
-		for(j = 0; j < 2; j++){
+	for (i = 0; i < 4; i++ ){
+		for(j = 0; j < 3; j++){
 			printf("%d ",matriz_soma[i][j]);
 		}
 		printf("\n");
