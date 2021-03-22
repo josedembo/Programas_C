@@ -7,10 +7,11 @@ Elabore um algoritmo recebe uma relação de números e forneça a sua amplitude. */
 
 int main(int argc, char *argv[]) {
 	int qtd_numeros, i, maior_numero, menor_numero, amplitude ;
+	
 	printf("informe quantos numeros tem na relacao: ");
 	scanf("%d",&qtd_numeros);
 	
-	int relacao[qtd_numeros]; // inicializando o vetor reslacao com o tamanho igual a quantidade de numero(qtd_numros)
+	int relacao[qtd_numeros]; // inicializando o vetor relacao com o tamanho igual a quantidade de numero(qtd_numros)
 	
 	// prienchendo o vetor relacao com os seus valores
 	for ( i = 0; i < qtd_numeros; i++ ){
@@ -18,10 +19,10 @@ int main(int argc, char *argv[]) {
 		scanf("%d",&relacao[i]);
 	}
 	
-	maior_numero = relacao[0];
-	menor_numero = relacao[0];
+	maior_numero = relacao[0]; // 5
+	menor_numero = relacao[0]; // 5
 	
-	// encontrando o maior  numero e p menor numero
+	// encontrando o maior  numero e o menor numero da relacao
 	for ( i = 0; i < qtd_numeros; i++ ){
 		
 		if(maior_numero < relacao[i]){
